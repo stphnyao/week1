@@ -11,7 +11,12 @@ template Multiplier3 () {
    signal output d;  
 
    // Constraints.  
-   d <== a * b * c;  
+   var x = a * b;
+   x += a * b;
+   var y = x * c;
+   y += x * c;
+   // Using assignment operator assuming constraint operators are valid
+   d <-- x * y;
 }
 
 component main = Multiplier3();
