@@ -247,7 +247,7 @@ contract HelloWorldVerifier {
             inputValues[i] = input[i];
         }
         if (verify(inputValues, proof) == 0) {
-            return true;
+            return true; //
         } else {
             return false;
         }

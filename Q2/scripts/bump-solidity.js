@@ -16,4 +16,3 @@ let multiplier3bumped = multiplier3content.replace(solidityRegex, "pragma solidi
 multiplier3bumped = multiplier3bumped.replace(verifierRegex, "contract Multiplier3Verifier");
 
 fs.writeFileSync("./contracts/Multiplier3Verifier.sol", multiplier3bumped);
-fs.writeFileSync("./contracts/Multiplier3Verifier_plonk.sol", multiplier3bumped);
